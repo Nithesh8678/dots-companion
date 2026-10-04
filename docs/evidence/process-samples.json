@@ -1,0 +1,70 @@
+{
+  "condition": "App with Settings open, static UI; user may interact. Not a dormant or energy benchmark.",
+  "samples": [
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 113184,
+      "elapsed": "03:18"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 113168,
+      "elapsed": "03:20"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 113168,
+      "elapsed": "03:22"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 110640,
+      "elapsed": "03:24"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 110640,
+      "elapsed": "03:26"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 110640,
+      "elapsed": "03:28"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 110640,
+      "elapsed": "03:30"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 110672,
+      "elapsed": "03:32"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 110560,
+      "elapsed": "03:34"
+    },
+    {
+      "pid": 69566,
+      "cpu_percent": 0.0,
+      "rss_kib": 109008,
+      "elapsed": "03:36"
+    }
+  ],
+  "mean_cpu_percent": 0.0,
+  "rss_mib_range": [
+    106.5,
+    110.5
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "bundleUIOpened" : false,
+  "checks" : [
+    "Command and Command+Shift A\/C\/V\/X\/Z\/Q\/W rejected before registration",
+    "Command function-key combinations, Control+Space and safe Stop pass structural validation",
+    "In-memory saved Command+A Stop resolves to Control+Option+Period",
+    "Valid saved Conversation Control+Space remains unchanged",
+    "Startup resolution writes no preferences; persistence waits for successful registration",
+    "Separate subprocess holds a previously free F19 binding exclusively",
+    "Rejected Command+A update preserves active F18 registration, verified from another process",
+    "Service exclusive registration refuses the occupied F19 combination",
+    "Failed update retains prior F18 binding in memory",
+    "Second subprocess cannot exclusively acquire retained F18 binding",
+    "Second subprocess can acquire F18 after service unregisters it",
+    "CopySymbolicHotKeys enabled system reservation refused before registration"
+  ],
+  "controlSpaceReserved" : false,
+  "nonexclusiveOtherAppConflicts" : "Not exhaustively detectable; exclusive ownership may suppress them",
+  "occupiedBinding" : "Control+Option+Command+F19",
+  "optionSpaceReserved" : false,
+  "preferencesWritten" : false,
+  "refusal" : "Conversation: ⌃⌥⌘ F19 could not be registered (-9878). It may be used by macOS or another app. Choose another binding.",
+  "releasedRegistrationStatus" : 0,
+  "retainedBinding" : "Control+Option+Command+F18",
+  "retainedRegistrationStatus" : -9878,
+  "syntheticKeyEvents" : 0,
+  "systemReservedKeyCode" : 53,
+  "systemReservedModifiers" : 2304
+}

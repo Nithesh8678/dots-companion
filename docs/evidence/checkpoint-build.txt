@@ -1,0 +1,153 @@
+warning: <HOME>/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'dots-companion': failed storing manifest for 'dots-companion' in cache: attempt to write a readonly database
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Emitting module DotsCore
+[5/8] Compiling DotsCore VoiceTurnLifecycle.swift
+[6/15] Compiling DotsCompanion Program.swift
+[7/15] Compiling DotsCompanion AppCoordinator.swift
+[8/15] Emitting module DotsCompanion
+[9/15] Compiling DotsCompanion OverlayController.swift
+[10/15] Compiling DotsCompanion ContextService.swift
+[11/15] Compiling DotsCompanion HotkeyService.swift
+[12/15] Compiling DotsCompanion WorkspaceView.swift
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:40:66: error: cannot convert value of type 'Binding<Subject>' to expected argument type 'Bool'
+ 38 |                 Divider()
+ 39 |                 HStack(alignment: .top, spacing: 9) {
+ 40 |                     Image(systemName: model.isListening || model.voiceMicrophoneActive ? "mic.fill" : "info.circle").foregroundStyle(model.isListening || model.voiceMicrophoneActive ? .orange : .secondary)
+    |                                                                  `- error: cannot convert value of type 'Binding<Subject>' to expected argument type 'Bool'
+ 41 |                     Text(model.message).font(.system(size: 11)).foregroundStyle(.secondary).lineLimit(3).textSelection(.enabled)
+ 42 |                     Spacer(minLength: 0)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:40:66: error: value of type 'AppCoordinator' has no dynamic member 'voiceMicrophoneActive' using key path from root type 'AppCoordinator'
+ 38 |                 Divider()
+ 39 |                 HStack(alignment: .top, spacing: 9) {
+ 40 |                     Image(systemName: model.isListening || model.voiceMicrophoneActive ? "mic.fill" : "info.circle").foregroundStyle(model.isListening || model.voiceMicrophoneActive ? .orange : .secondary)
+    |                                                                  `- error: value of type 'AppCoordinator' has no dynamic member 'voiceMicrophoneActive' using key path from root type 'AppCoordinator'
+ 41 |                     Text(model.message).font(.system(size: 11)).foregroundStyle(.secondary).lineLimit(3).textSelection(.enabled)
+ 42 |                     Spacer(minLength: 0)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:40:60: error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 38 |                 Divider()
+ 39 |                 HStack(alignment: .top, spacing: 9) {
+ 40 |                     Image(systemName: model.isListening || model.voiceMicrophoneActive ? "mic.fill" : "info.circle").foregroundStyle(model.isListening || model.voiceMicrophoneActive ? .orange : .secondary)
+    |                                                            `- error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 41 |                     Text(model.message).font(.system(size: 11)).foregroundStyle(.secondary).lineLimit(3).textSelection(.enabled)
+ 42 |                     Spacer(minLength: 0)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:40:161: error: cannot convert value of type 'Binding<Subject>' to expected argument type 'Bool'
+ 38 |                 Divider()
+ 39 |                 HStack(alignment: .top, spacing: 9) {
+ 40 |                     Image(systemName: model.isListening || model.voiceMicrophoneActive ? "mic.fill" : "info.circle").foregroundStyle(model.isListening || model.voiceMicrophoneActive ? .orange : .secondary)
+    |                                                                                                                                                                 `- error: cannot convert value of type 'Binding<Subject>' to expected argument type 'Bool'
+ 41 |                     Text(model.message).font(.system(size: 11)).foregroundStyle(.secondary).lineLimit(3).textSelection(.enabled)
+ 42 |                     Spacer(minLength: 0)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:40:161: error: value of type 'AppCoordinator' has no dynamic member 'voiceMicrophoneActive' using key path from root type 'AppCoordinator'
+ 38 |                 Divider()
+ 39 |                 HStack(alignment: .top, spacing: 9) {
+ 40 |                     Image(systemName: model.isListening || model.voiceMicrophoneActive ? "mic.fill" : "info.circle").foregroundStyle(model.isListening || model.voiceMicrophoneActive ? .orange : .secondary)
+    |                                                                                                                                                                 `- error: value of type 'AppCoordinator' has no dynamic member 'voiceMicrophoneActive' using key path from root type 'AppCoordinator'
+ 41 |                     Text(model.message).font(.system(size: 11)).foregroundStyle(.secondary).lineLimit(3).textSelection(.enabled)
+ 42 |                     Spacer(minLength: 0)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:40:155: error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 38 |                 Divider()
+ 39 |                 HStack(alignment: .top, spacing: 9) {
+ 40 |                     Image(systemName: model.isListening || model.voiceMicrophoneActive ? "mic.fill" : "info.circle").foregroundStyle(model.isListening || model.voiceMicrophoneActive ? .orange : .secondary)
+    |                                                                                                                                                           `- error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 41 |                     Text(model.message).font(.system(size: 11)).foregroundStyle(.secondary).lineLimit(3).textSelection(.enabled)
+ 42 |                     Spacer(minLength: 0)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:65:32: error: cannot call value of non-function type 'Binding<Subject>'
+ 63 |             VStack(alignment: .leading, spacing: 8) {
+ 64 |                 Text("A LITTLE CLOSER.").font(.system(size: 9, weight: .medium, design: .monospaced)).tracking(1).foregroundStyle(.tertiary)
+ 65 |                 Button { model.toggleVoice() } label: { HStack { Text("Talk"); Spacer(); Text(model.hotkeyLabels[.conversation] ?? "Unassigned").font(.system(size: 10, design: .monospaced)) } }.buttonStyle(.plain)
+    |                                `- error: cannot call value of non-function type 'Binding<Subject>'
+ 66 |                 Button { model.stopLocal() } label: { HStack { Text("Stop local"); Spacer(); Text(model.hotkeyLabels[.stop] ?? "Unassigned").font(.system(size: 10, design: .monospaced)) } }.buttonStyle(.plain).foregroundStyle(.secondary)
+ 67 |             }.font(.system(size: 11)).padding(.bottom, 22)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:65:32: error: value of type 'AppCoordinator' has no dynamic member 'toggleVoice' using key path from root type 'AppCoordinator'
+ 63 |             VStack(alignment: .leading, spacing: 8) {
+ 64 |                 Text("A LITTLE CLOSER.").font(.system(size: 9, weight: .medium, design: .monospaced)).tracking(1).foregroundStyle(.tertiary)
+ 65 |                 Button { model.toggleVoice() } label: { HStack { Text("Talk"); Spacer(); Text(model.hotkeyLabels[.conversation] ?? "Unassigned").font(.system(size: 10, design: .monospaced)) } }.buttonStyle(.plain)
+    |                                `- error: value of type 'AppCoordinator' has no dynamic member 'toggleVoice' using key path from root type 'AppCoordinator'
+ 66 |                 Button { model.stopLocal() } label: { HStack { Text("Stop local"); Spacer(); Text(model.hotkeyLabels[.stop] ?? "Unassigned").font(.system(size: 10, design: .monospaced)) } }.buttonStyle(.plain).foregroundStyle(.secondary)
+ 67 |             }.font(.system(size: 11)).padding(.bottom, 22)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:65:26: error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 63 |             VStack(alignment: .leading, spacing: 8) {
+ 64 |                 Text("A LITTLE CLOSER.").font(.system(size: 9, weight: .medium, design: .monospaced)).tracking(1).foregroundStyle(.tertiary)
+ 65 |                 Button { model.toggleVoice() } label: { HStack { Text("Talk"); Spacer(); Text(model.hotkeyLabels[.conversation] ?? "Unassigned").font(.system(size: 10, design: .monospaced)) } }.buttonStyle(.plain)
+    |                          `- error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 66 |                 Button { model.stopLocal() } label: { HStack { Text("Stop local"); Spacer(); Text(model.hotkeyLabels[.stop] ?? "Unassigned").font(.system(size: 10, design: .monospaced)) } }.buttonStyle(.plain).foregroundStyle(.secondary)
+ 67 |             }.font(.system(size: 11)).padding(.bottom, 22)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:85:32: error: cannot call value of non-function type 'Binding<Subject>'
+ 83 |             }.padding(.top, 6)
+ 84 |             HStack(spacing: 12) {
+ 85 |                 Button { model.toggleVoice() } label: { Label(model.voiceButtonTitle, systemImage: "waveform").font(.system(size: 12, weight: .semibold)).padding(.vertical, 6).padding(.horizontal, 9) }.buttonStyle(.borderedProminent)
+    |                                `- error: cannot call value of non-function type 'Binding<Subject>'
+ 86 |                 if model.voiceIsActive {
+ 87 |                     Button("End conversation") { model.stopLocal() }.buttonStyle(.bordered)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:85:32: error: value of type 'AppCoordinator' has no dynamic member 'toggleVoice' using key path from root type 'AppCoordinator'
+ 83 |             }.padding(.top, 6)
+ 84 |             HStack(spacing: 12) {
+ 85 |                 Button { model.toggleVoice() } label: { Label(model.voiceButtonTitle, systemImage: "waveform").font(.system(size: 12, weight: .semibold)).padding(.vertical, 6).padding(.horizontal, 9) }.buttonStyle(.borderedProminent)
+    |                                `- error: value of type 'AppCoordinator' has no dynamic member 'toggleVoice' using key path from root type 'AppCoordinator'
+ 86 |                 if model.voiceIsActive {
+ 87 |                     Button("End conversation") { model.stopLocal() }.buttonStyle(.bordered)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:85:26: error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 83 |             }.padding(.top, 6)
+ 84 |             HStack(spacing: 12) {
+ 85 |                 Button { model.toggleVoice() } label: { Label(model.voiceButtonTitle, systemImage: "waveform").font(.system(size: 12, weight: .semibold)).padding(.vertical, 6).padding(.horizontal, 9) }.buttonStyle(.borderedProminent)
+    |                          `- error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 86 |                 if model.voiceIsActive {
+ 87 |                     Button("End conversation") { model.stopLocal() }.buttonStyle(.bordered)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:85:69: error: value of type 'AppCoordinator' has no dynamic member 'voiceButtonTitle' using key path from root type 'AppCoordinator'
+ 83 |             }.padding(.top, 6)
+ 84 |             HStack(spacing: 12) {
+ 85 |                 Button { model.toggleVoice() } label: { Label(model.voiceButtonTitle, systemImage: "waveform").font(.system(size: 12, weight: .semibold)).padding(.vertical, 6).padding(.horizontal, 9) }.buttonStyle(.borderedProminent)
+    |                                                                     `- error: value of type 'AppCoordinator' has no dynamic member 'voiceButtonTitle' using key path from root type 'AppCoordinator'
+ 86 |                 if model.voiceIsActive {
+ 87 |                     Button("End conversation") { model.stopLocal() }.buttonStyle(.bordered)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:85:63: error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 83 |             }.padding(.top, 6)
+ 84 |             HStack(spacing: 12) {
+ 85 |                 Button { model.toggleVoice() } label: { Label(model.voiceButtonTitle, systemImage: "waveform").font(.system(size: 12, weight: .semibold)).padding(.vertical, 6).padding(.horizontal, 9) }.buttonStyle(.borderedProminent)
+    |                                                               `- error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+ 86 |                 if model.voiceIsActive {
+ 87 |                     Button("End conversation") { model.stopLocal() }.buttonStyle(.bordered)
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:124:37: error: value of type 'AppCoordinator' has no dynamic member 'voiceMicrophoneActive' using key path from root type 'AppCoordinator'
+122 |         VStack(alignment: .leading, spacing: 13) {
+123 |             HStack(spacing: 7) {
+124 |                 Circle().fill(model.voiceMicrophoneActive ? Color.orange : leaf).frame(width: 6, height: 6)
+    |                                     `- error: value of type 'AppCoordinator' has no dynamic member 'voiceMicrophoneActive' using key path from root type 'AppCoordinator'
+125 |                 Text(model.voiceStatus).font(.system(size: 11, weight: .medium))
+126 |                 Spacer()
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:124:31: error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+122 |         VStack(alignment: .leading, spacing: 13) {
+123 |             HStack(spacing: 7) {
+124 |                 Circle().fill(model.voiceMicrophoneActive ? Color.orange : leaf).frame(width: 6, height: 6)
+    |                               `- error: referencing subscript 'subscript(dynamicMember:)' requires wrapper 'ObservedObject<AppCoordinator>.Wrapper'
+125 |                 Text(model.voiceStatus).font(.system(size: 11, weight: .medium))
+126 |                 Spacer()
+
+<PROJECT>/Sources/DotsCompanion/WorkspaceView.swift:124:37: error: cannot convert value of type 'Binding<Subject>' to expected condition type 'Bool'
+122 |         VStack(alignment: .leading, spacing: 13) {
+123 |             HStack(spacing: 7) {
+124 |                 Circle().fill(model.voiceMicrophoneActive ? Color.orange : leaf).frame(width: 6, height: 6)
+    |                                     `- error: cannot convert value of type 'Binding<Subject>' to expected condition type 'Bool'
+125 |                 Text(model.voiceStatus).font(.system(size: 11, weight: .medium))
+126 |                 Spacer()
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.

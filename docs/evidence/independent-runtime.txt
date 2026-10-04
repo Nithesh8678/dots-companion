@@ -1,0 +1,28 @@
+Local native probe at 2026-10-04T23:23:49.539049+05:30
+Compilation target: arm64, macOS 14, Swift language 5.
+Offline URLProtocol fixtures; no API account or live audio verification.
+$ xcrun swiftc -swift-version 5 -target arm64-apple-macosx14.0 -module-cache-path /private/tmp/dots-services-modulecache Sources/DotsCompanion/Services/AccessibilitySupport.swift Sources/DotsCompanion/Services/ActionGateway.swift Sources/DotsCompanion/Services/ContextService.swift Sources/DotsCompanion/Services/DictationService.swift Sources/DotsCompanion/Services/HotkeyService.swift Sources/DotsCompanion/Services/IndependentAssistantAdapter.swift Sources/DotsCompanion/Services/KeychainService.swift Sources/DotsCompanion/Services/PermissionCoordinator.swift Sources/DotsCompanion/Services/ServiceError.swift Sources/DotsCompanion/Services/SpeechOutputService.swift Tests/ServiceProbes/IndependentRuntimeProbe.swift -o /private/tmp/dots-independent-runtime-probe
+
+
+Compiler exit: 0
+$ /private/tmp/dots-independent-runtime-probe
+{
+  "accountVerified" : false,
+  "cancellationMilliseconds" : 0.20254170522093773,
+  "checks" : [
+    "SSE split JSON, comments and CRLF",
+    "SSE oversized event refused",
+    "Streaming deltas, response identity, duplicate sequence rejection and verified completion",
+    "Incomplete stream rejected",
+    "Disconnected stream rejected",
+    "Cancellation ends owned pending HTTP transport",
+    "Default-disabled adapter refuses send before Keychain or transport",
+    "Empty local speech creates no speaking state"
+  ],
+  "fixtureRequests" : 4,
+  "networkRequests" : 0,
+  "realAudioPlayed" : false
+}
+
+
+Probe exit: 0

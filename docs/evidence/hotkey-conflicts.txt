@@ -1,0 +1,50 @@
+Hotkey conflict probe — native cross-process verification
+
+Source compiled with: xcrun swiftc -swift-version 5 -target arm64-apple-macosx14.0 -module-cache-path /private/tmp/dots-services-modulecache Sources/DotsCompanion/Services/ServiceError.swift Sources/DotsCompanion/Services/HotkeyService.swift Tests/ServiceProbes/HotkeyConflictProbe.swift -o /private/tmp/dots-hotkey-conflict-probe
+
+Compiler exit: 0
+
+Execution required ordinary WindowServer access; sandboxed CLI registration returned eventInternalErr (-9868) and made no registration.
+
+Command: /private/tmp/dots-hotkey-conflict-probe
+
+Exit: 0
+
+{
+  "bundleUIOpened" : false,
+  "checks" : [
+    "Separate subprocess holds a previously free F19 binding exclusively",
+    "Service exclusive registration refuses the occupied F19 combination",
+    "Failed update retains prior F18 binding in memory",
+    "Second subprocess cannot exclusively acquire retained F18 binding",
+    "Second subprocess can acquire F18 after service unregisters it",
+    "CopySymbolicHotKeys enabled system reservation refused before registration"
+  ],
+  "controlSpaceReserved" : false,
+  "nonexclusiveOtherAppConflicts" : "Not exhaustively detectable; exclusive ownership may suppress them",
+  "occupiedBinding" : "Control+Option+Command+F19",
+  "optionSpaceReserved" : false,
+  "preferencesWritten" : false,
+  "refusal" : "Conversation: ⌃⌥⌘ F19 could not be registered (-9878). It may be used by macOS or another app. Choose another binding.",
+  "releasedRegistrationStatus" : 0,
+  "retainedBinding" : "Control+Option+Command+F18",
+  "retainedRegistrationStatus" : -9878,
+  "syntheticKeyEvents" : 0,
+  "systemReservedKeyCode" : 53,
+  "systemReservedModifiers" : 2304
+}
+
+
+SDK evidence:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/CarbonEvents.h
+
+Lines 15407–15424 and 15428: the HotKeyOptions comment describes shared nonexclusive registration, exclusive suppression of nonexclusive notifications, and kEventHotKeyExclusive.
+
+Lines 15473–15476: the RegisterEventHotKey Result documentation specifically describes eventHotKeyExistsErr for another process's existing exclusive registration.
+
+Lines 15555–15566: CopySymbolicHotKeys enumerates system-wide symbolic keyboard preferences; application-specific command keys are excluded.
+
+Observed limitation: an earlier fixture holding F19 nonexclusively did NOT cause exclusive registration to fail. That test did not pass. Therefore no claim of exhaustive other-app conflict detection is made.
+
+No user application settings were reset. HotkeyService(preferences: nil) disabled persistence for this fixture. All temporary registrations were released. No keyboard events were synthesized.

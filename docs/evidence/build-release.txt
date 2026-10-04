@@ -1,0 +1,28 @@
+Building Dots Companion for arm64…
+warning: <HOME>/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'dots-companion': failed storing manifest for 'dots-companion' in cache: attempt to write a readonly database
+Building for production...
+[0/3] Write sources
+[1/3] Write swift-version--58304C5D6DBC2206.txt
+[3/4] Compiling DotsCompanion AnnotationService.swift
+[3/5] Write Objects.LinkFileList
+[4/5] Linking DotsCompanion
+Build complete! (4.84s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+warning: <HOME>/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'dots-companion': failed storing manifest for 'dots-companion' in cache: attempt to write a readonly database
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+<PROJECT>/dist/.dots-package.4J4FrR/Dots Companion.app/Contents/Info.plist: OK
+<PROJECT>/Resources/DotsCompanion.entitlements: OK
+<PROJECT>/dist/.dots-package.4J4FrR/Dots Companion.app: replacing existing signature
+<PROJECT>/dist/.dots-package.4J4FrR/Dots Companion.app: valid on disk
+<PROJECT>/dist/.dots-package.4J4FrR/Dots Companion.app: satisfies its Designated Requirement
+
+Development app: <PROJECT>/dist/Dots Companion.app
+Archive: <PROJECT>/dist/Dots Companion.zip
+Ad-hoc signed with hardened runtime. Not Developer ID signed or notarized.
+Launch: open "<PROJECT>/dist/Dots Companion.app"

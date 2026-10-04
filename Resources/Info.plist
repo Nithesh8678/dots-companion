@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>DotsCompanion</string>
+    <key>CFBundleIdentifier</key>
+    <string>dev.nithesh.DotsCompanion</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Dots Companion</string>
+    <key>CFBundleDisplayName</key>
+    <string>Dots Companion</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.2.0</string>
+    <key>CFBundleVersion</key>
+    <string>2</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.productivity</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Talk to your local companion or dictate text when you press its shortcut. The microphone pauses during replies and stops when you end the conversation.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Turn your speech into text using Apple's on-device speech recognition. Dots Companion refuses dictation when on-device recognition is unavailable.</string>
+</dict>
+</plist>

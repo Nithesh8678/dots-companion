@@ -1,0 +1,113 @@
+warning: <HOME>/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: <HOME>/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'dots-companion': failed storing manifest for 'dots-companion' in cache: attempt to write a readonly database
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/6] Emitting module DotsCompanion
+[4/6] Compiling DotsCompanion AppCoordinator.swift
+[4/7] Write Objects.LinkFileList
+[5/7] Linking DotsCompanion
+[6/7] Applying DotsCompanion
+Build complete! (1.71s)
+Test Suite 'All tests' started at 2026-10-04 23:29:25.334.
+Test Suite 'DotsCompanionPackageTests.xctest' started at 2026-10-04 23:29:25.334.
+Test Suite 'ActionGateTests' started at 2026-10-04 23:29:25.334.
+Test Case '-[DotsCoreTests.ActionGateTests testCancellationAfterPreflightIsRecheckedBeforeDispatch]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testCancellationAfterPreflightIsRecheckedBeforeDispatch]' passed (0.002 seconds).
+Test Case '-[DotsCoreTests.ActionGateTests testCapacityNeverEvictsDeduplicationHistory]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testCapacityNeverEvictsDeduplicationHistory]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ActionGateTests testChangedApplicationNeverInserts]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testChangedApplicationNeverInserts]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ActionGateTests testChangedFieldInSameApplicationNeverInserts]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testChangedFieldInSameApplicationNeverInserts]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ActionGateTests testCoordinateActionRequiresCurrentWindowAndRevision]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testCoordinateActionRequiresCurrentWindowAndRevision]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ActionGateTests testPermissionRevocationAndConsequentialAuthorization]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testPermissionRevocationAndConsequentialAuthorization]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ActionGateTests testRepeatNetworkDeliveryCannotDuplicateInsertion]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testRepeatNetworkDeliveryCannotDuplicateInsertion]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ActionGateTests testSecureFieldIsRefusedEvenWhenItBecameSecureAfterCapture]' started.
+Test Case '-[DotsCoreTests.ActionGateTests testSecureFieldIsRefusedEvenWhenItBecameSecureAfterCapture]' passed (0.000 seconds).
+Test Suite 'ActionGateTests' passed at 2026-10-04 23:29:25.338.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'GeometryTests' started at 2026-10-04 23:29:25.338.
+Test Case '-[DotsCoreTests.GeometryTests testAnnotationCannotCrossContextOrDisplay]' started.
+Test Case '-[DotsCoreTests.GeometryTests testAnnotationCannotCrossContextOrDisplay]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.GeometryTests testContextRejectsTimeTravelMovementAndNavigation]' started.
+Test Case '-[DotsCoreTests.GeometryTests testContextRejectsTimeTravelMovementAndNavigation]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.GeometryTests testInvalidOrOutsideGeometryDoesNotProduceConfidentTarget]' started.
+Test Case '-[DotsCoreTests.GeometryTests testInvalidOrOutsideGeometryDoesNotProduceConfidentTarget]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.GeometryTests testRetinaPixelsConvertOnNegativeOriginDisplayAndRoundTrip]' started.
+Test Case '-[DotsCoreTests.GeometryTests testRetinaPixelsConvertOnNegativeOriginDisplayAndRoundTrip]' passed (0.000 seconds).
+Test Suite 'GeometryTests' passed at 2026-10-04 23:29:25.338.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'MemoryStoreTests' started at 2026-10-04 23:29:25.338.
+Test Case '-[DotsCoreTests.MemoryStoreTests testCapacityAllowsEditButDoesNotSilentlyDeleteMemory]' started.
+Test Case '-[DotsCoreTests.MemoryStoreTests testCapacityAllowsEditButDoesNotSilentlyDeleteMemory]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.MemoryStoreTests testInvalidArchiveDoesNotOverwriteExistingMemory]' started.
+Test Case '-[DotsCoreTests.MemoryStoreTests testInvalidArchiveDoesNotOverwriteExistingMemory]' passed (0.001 seconds).
+Test Case '-[DotsCoreTests.MemoryStoreTests testMemoryRoundTripEditAndRemoval]' started.
+Test Case '-[DotsCoreTests.MemoryStoreTests testMemoryRoundTripEditAndRemoval]' passed (0.005 seconds).
+Test Case '-[DotsCoreTests.MemoryStoreTests testOversizedInputIsRejectedBeforeDecoding]' started.
+Test Case '-[DotsCoreTests.MemoryStoreTests testOversizedInputIsRejectedBeforeDecoding]' passed (0.002 seconds).
+Test Suite 'MemoryStoreTests' passed at 2026-10-04 23:29:25.346.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.008 (0.008) seconds
+Test Suite 'SessionStateTests' started at 2026-10-04 23:29:25.346.
+Test Case '-[DotsCoreTests.SessionStateTests testCancellationRejectsLateEventsAndWaitsForAcknowledgement]' started.
+Test Case '-[DotsCoreTests.SessionStateTests testCancellationRejectsLateEventsAndWaitsForAcknowledgement]' passed (0.001 seconds).
+Test Case '-[DotsCoreTests.SessionStateTests testHiddenPanelDoesNotCancelConversation]' started.
+Test Case '-[DotsCoreTests.SessionStateTests testHiddenPanelDoesNotCancelConversation]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.SessionStateTests testHostBridgeCannotInventVoiceOrCompletion]' started.
+Test Case '-[DotsCoreTests.SessionStateTests testHostBridgeCannotInventVoiceOrCompletion]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.SessionStateTests testOldSessionIsRejectedEvenIfGenerationIsForgedCurrent]' started.
+Test Case '-[DotsCoreTests.SessionStateTests testOldSessionIsRejectedEvenIfGenerationIsForgedCurrent]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.SessionStateTests testPlaybackCannotStartWithoutCommittedInput]' started.
+Test Case '-[DotsCoreTests.SessionStateTests testPlaybackCannotStartWithoutCommittedInput]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.SessionStateTests testSupersededTurnCannotSpeakOrChangeTranscript]' started.
+Test Case '-[DotsCoreTests.SessionStateTests testSupersededTurnCannotSpeakOrChangeTranscript]' passed (0.000 seconds).
+Test Suite 'SessionStateTests' passed at 2026-10-04 23:29:25.348.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'ShortcutGestureTests' started at 2026-10-04 23:29:25.348.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testControlDoubleTapFiresOnceAndOrdinaryShortcutContaminatesTap]' started.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testControlDoubleTapFiresOnceAndOrdinaryShortcutContaminatesTap]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ShortcutGestureTests testEscapeAndSleepDiscardHoldInsteadOfSubmitting]' started.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testEscapeAndSleepDiscardHoldInsteadOfSubmitting]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ShortcutGestureTests testHoldingExtraModifierCancelsRatherThanCommits]' started.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testHoldingExtraModifierCancelsRatherThanCommits]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ShortcutGestureTests testModifierGesturesAreOptIn]' started.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testModifierGesturesAreOptIn]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ShortcutGestureTests testRegisteredChordFiresOnceUntilReleaseAndIgnoresRepeat]' started.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testRegisteredChordFiresOnceUntilReleaseAndIgnoresRepeat]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ShortcutGestureTests testShortHoldDoesNotSubmitAndNormalChordIsCancelled]' started.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testShortHoldDoesNotSubmitAndNormalChordIsCancelled]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.ShortcutGestureTests testValidHoldHasSingleBeginAndEnd]' started.
+Test Case '-[DotsCoreTests.ShortcutGestureTests testValidHoldHasSingleBeginAndEnd]' passed (0.000 seconds).
+Test Suite 'ShortcutGestureTests' passed at 2026-10-04 23:29:25.349.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'TaskCoordinatorTests' started at 2026-10-04 23:29:25.349.
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testCompletionRequiresObservedPostconditionAndResult]' started.
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testCompletionRequiresObservedPostconditionAndResult]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testEndingVoiceDoesNotStopTask]' started.
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testEndingVoiceDoesNotStopTask]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.Taskwarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+CoordinatorTests testRetryReturnsSameIdentityAndDoesNotCreateNewTask]' started.
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testRetryReturnsSameIdentityAndDoesNotCreateNewTask]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testStopTracksRealChildrenAndRejectsOldCompletion]' started.
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testStopTracksRealChildrenAndRejectsOldCompletion]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testTaskCapacityDoesNotForgetEarlierRetryIdentity]' started.
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testTaskCapacityDoesNotForgetEarlierRetryIdentity]' passed (0.000 seconds).
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testTaskRestoreMarksInterruptedWorkUnverifiedAndPreservesIdentity]' started.
+Test Case '-[DotsCoreTests.TaskCoordinatorTests testTaskRestoreMarksInterruptedWorkUnverifiedAndPreservesIdentity]' passed (0.002 seconds).
+Test Suite 'TaskCoordinatorTests' passed at 2026-10-04 23:29:25.351.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'DotsCompanionPackageTests.xctest' passed at 2026-10-04 23:29:25.351.
+	 Executed 35 tests, with 0 failures (0 unexpected) in 0.015 (0.017) seconds
+Test Suite 'All tests' passed at 2026-10-04 23:29:25.351.
+	 Executed 35 tests, with 0 failures (0 unexpected) in 0.015 (0.017) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

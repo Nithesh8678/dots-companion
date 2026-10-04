@@ -1,0 +1,28 @@
+Local native probe at 2026-10-04T23:22:31.484636+05:30
+Compilation target: arm64, macOS 14, Swift language 5.
+Unbundled CLI identity; permission results do not establish the app bundle TCC status.
+$ xcrun swiftc -swift-version 5 -target arm64-apple-macosx14.0 -module-cache-path /private/tmp/dots-services-modulecache Sources/DotsCompanion/Services/AccessibilitySupport.swift Sources/DotsCompanion/Services/ActionGateway.swift Sources/DotsCompanion/Services/ContextService.swift Sources/DotsCompanion/Services/DictationService.swift Sources/DotsCompanion/Services/HotkeyService.swift Sources/DotsCompanion/Services/IndependentAssistantAdapter.swift Sources/DotsCompanion/Services/KeychainService.swift Sources/DotsCompanion/Services/PermissionCoordinator.swift Sources/DotsCompanion/Services/ServiceError.swift Sources/DotsCompanion/Services/SpeechOutputService.swift Tests/ServiceProbes/NativeServicesProbe.swift -o /private/tmp/dots-native-services-probe
+
+
+Compiler exit: 0
+$ /private/tmp/dots-native-services-probe
+{
+  "accessibility" : false,
+  "capturedPrivateContent" : false,
+  "checks" : [
+    "Unmodified shortcut rejected before registration",
+    "Out-of-range key code rejected",
+    "Unavailable application rejected without dispatch",
+    "Screen snapshot refused when permission is missing",
+    "Insertion destination refused when Accessibility is missing",
+    "Dictation refused without permission; microphone stayed inactive",
+    "Native snapshot pixel-to-global mapping, including negative display origin"
+  ],
+  "microphone" : "Denied",
+  "requestedPermissions" : false,
+  "screenCapture" : false,
+  "speech" : "Denied"
+}
+
+
+Probe exit: 0
